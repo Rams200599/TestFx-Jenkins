@@ -24,7 +24,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 	// @BeforeClass
 	// public static void setUpHeadlessMode(){
-	// 		System.setProperty("testfx.robot", "awt");
+	// 		System.setProperty("testfx.robot", "glass");
 	// 		System.setProperty("testfx.headless", "true");
 	// 		System.setProperty("prism.order", "sw");
 	// 		System.setProperty("prism.text", "t2k");
@@ -34,9 +34,9 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	 @Override
     public void init() throws Exception {
         super.init();
-        System.setProperty("testfx.robot", "awt");
+        System.setProperty("testfx.robot", "monocle");
         System.setProperty("testfx.headless", "true");
-	// System.setProperty("java.awt.headless", "false");
+	System.setProperty("java.awt.headless", "true");
     }
 
 	@Override
