@@ -142,19 +142,19 @@ public void testButtonB(){
 	// assertEquals("Old Password", label1.getText());
 	// sleep(500);
 
-	// clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
-	// sleep(500);
+	clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
+	sleep(500);
 
-	// clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
-	// sleep(500);
+	clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
+	sleep(500);
 
-	// clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
-	// sleep(500);
+	clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
+	sleep(500);
 
-	// clickOn("#saveButton");
-	// sleep(500);
+	clickOn("#saveButton");
+	sleep(500);
 
-	// clickOn("OK");
+	clickOn("OK");
 }
 
 @Test
