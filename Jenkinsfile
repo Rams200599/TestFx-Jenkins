@@ -12,7 +12,7 @@ pipeline {
   steps {
     // sh 'mvn clean javafx:compile'
     // sh 'mvn test -Dtestfx.robot=glass -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw'
-    sh 'mvn test -Djava.awt.headless=true -Dtestfx.headless=true -Dtestfx.robot=glass -Dprism.order=sw'
+    sh 'mvn test -Djava.awt.headless=true -Dtestfx.headless=true -Dtestfx.robot=awt -Dprism.order=sw'
   }
 }
 
