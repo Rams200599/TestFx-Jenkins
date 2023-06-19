@@ -81,7 +81,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	// clickOn("OK");
 
 // 	//test case for TextField
-// 	TextField textField = robot.lookup("#textFieldA").query();
+	// TextField textField = robot.lookup("#textFieldA").query();
 // 	// assertEquals("Page A", textField.getText());
 // 	sleep(500);
 
@@ -136,9 +136,9 @@ public void testButtonB(){
 	// FxRobot robot = new FxRobot();
 
 	//Test case for Label
-	Label label1 = robot.lookup("#label1").query();
+	// Label label1 = robot.lookup("#label1").query();
 	// assertEquals("Old Password", label1.getText());
-	sleep(500);
+	// sleep(500);
 
 	clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
 	sleep(500);
