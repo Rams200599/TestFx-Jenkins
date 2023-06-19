@@ -10,7 +10,7 @@ pipeline {
 
    stage('Build and Test') {
   steps {
-    sh 'mvn clean javafx:compile'
+    // sh 'mvn clean javafx:compile'
     sh 'mvn test -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw'
   }
 }
