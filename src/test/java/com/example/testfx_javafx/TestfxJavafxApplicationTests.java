@@ -1,6 +1,7 @@
 package com.example.testfx_javafx;
 
 import org.junit.jupiter.api.Test;
+import org.junit.BeforeClass;
 import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.ApplicationTest;
 
