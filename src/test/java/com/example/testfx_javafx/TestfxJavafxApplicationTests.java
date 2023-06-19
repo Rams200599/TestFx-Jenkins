@@ -62,7 +62,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	public void testButtonA(){
 	//Click the button
 	// FxRobot robot = new FxRobot();
-	// robot.clickOn("#buttonA");
+	clickOn("#buttonA");
 
         // FxRobot robot = new FxRobot();
         // robot.clickOn("#buttonA");
