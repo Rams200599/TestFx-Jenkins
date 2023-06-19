@@ -125,13 +125,13 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
  //        .clickOn("C++")
  //        .sleep(500)
  //        .release(KeyCode.CONTROL);
-// }
+}
 
 // //Test case for Button B
-// @Test
-// public void testButtonB(){
-// 	clickOn("#buttonB");
-// 	sleep(500);
+@Test
+public void testButtonB(){
+	clickOn("#buttonB");
+	sleep(500);
 
 // 	FxRobot robot = new FxRobot();
 
@@ -153,13 +153,13 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	sleep(500);
 
 // 	clickOn("OK");
-// }
+}
 
 // //Test case for Button C
-// @Test
-// public void testButtonC(){
-// 	clickOn("#buttonC");
-// 	sleep(500);
+@Test
+public void testButtonC(){
+	clickOn("#buttonC");
+	sleep(500);
 
 // 	FxRobot robot = new FxRobot();
 
@@ -180,14 +180,14 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	clickOn("#saveButton");
 // 	sleep(500);
 // 	// assertEquals("Female selected", female.getText()+" selected");
-// }
+}
 
 // //Test case for Button D
-// @Test
-// public void testButtonD(){
-// 	FxRobot robot = new FxRobot();
-// 	clickOn("#buttonD");
-// 	sleep(500);
+@Test
+public void testButtonD(){
+	// FxRobot robot = new FxRobot();
+	clickOn("#buttonD");
+	sleep(500);
 
 // 	//Test case for ComboBox
 // 	// clickOn("#comboBOx");
@@ -224,13 +224,13 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 // 	clickOn("#saveButton");
 // 	sleep(500);
-// }
+}
 
 // //Test case for Button E
-// @Test
-// public void testButtonE(){
-// 	clickOn("#buttonE");
-// 	sleep(500);
+@Test
+public void testButtonE(){
+	clickOn("#buttonE");
+	sleep(500);
 
 // 	FxRobot robot = new FxRobot();
 
@@ -240,11 +240,11 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	// clickOn("80");
 // 	slider.setValue(50.0);
 // 	sleep(500);
-// }
+}
 
-// @Test
-// public void testButtonF(){
-// 	clickOn("#buttonF");
+@Test
+public void testButtonF(){
+	clickOn("#buttonF");
 // 	// clickOn("#dp");
 
 // 	clickOn(1215, 340);
