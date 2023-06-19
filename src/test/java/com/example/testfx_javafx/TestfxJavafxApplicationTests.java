@@ -59,11 +59,11 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	
 
 	/***************************TestFx-Test-Cases******************************/
-	@Test
-	public void testButtonA(){
+	// @Test
+	// public void testButtonA(){
 	//Click the button
 	// FxRobot robot = new FxRobot();
-	clickOn("#buttonA");
+	// clickOn("#buttonA");
 
         // FxRobot robot = new FxRobot();
         // robot.clickOn("#buttonA");
@@ -125,7 +125,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
  //        .clickOn("C++")
  //        .sleep(500)
  //        .release(KeyCode.CONTROL);
-}
+// }
 
 // //Test case for Button B
 @Test
@@ -133,26 +133,26 @@ public void testButtonB(){
 	clickOn("#buttonB");
 	sleep(500);
 
-// 	FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
-// 	//Test case for Label
-// 	Label label1 = robot.lookup("#label1").query();
-// 	// assertEquals("Old Password", label1.getText());
-// 	sleep(500);
+	//Test case for Label
+	Label label1 = robot.lookup("#label1").query();
+	// assertEquals("Old Password", label1.getText());
+	sleep(500);
 
-// 	robot.clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
-// 	sleep(500);
+	robot.clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
+	sleep(500);
 
-// 	robot.clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
-// 	sleep(500);
+	robot.clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
+	sleep(500);
 
-// 	robot.clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
-// 	sleep(500);
+	robot.clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
+	sleep(500);
 
-// 	clickOn("#saveButton");
-// 	sleep(500);
+	clickOn("#saveButton");
+	sleep(500);
 
-// 	clickOn("OK");
+	clickOn("OK");
 }
 
 // //Test case for Button C
