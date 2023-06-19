@@ -155,6 +155,15 @@ public void testButtonB(){
 	// clickOn("OK");
 }
 
+@Test
+public void menuBtn(){
+	clickOn("#menuButton");
+	sleep(200);
+
+	// clickOn("theam");
+
+	clickOn("#helpMenu").sleep(200);
+}
 // //Test case for Button C
 // @Test
 // public void testButtonC(){
