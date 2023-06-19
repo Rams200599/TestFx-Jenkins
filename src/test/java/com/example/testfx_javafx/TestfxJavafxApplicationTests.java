@@ -37,7 +37,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	    
         System.setProperty("testfx.robot", "monocle");
         System.setProperty("testfx.headless", "true");
-	System.setProperty("java.awt.headless", "true");
+	// System.setProperty("java.awt.headless", "true");
     }
 
 	@Override
