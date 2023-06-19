@@ -72,13 +72,13 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
-	clickOn("#dialogBoxBtn");
-	sleep(500);
+	// clickOn("#dialogBoxBtn");
+	// sleep(500);
 
-	clickOn("Monday").sleep(500);
-	clickOn("Wednesday");
-	sleep(500);
-	clickOn("OK");
+	// clickOn("Monday").sleep(500);
+	// clickOn("Wednesday");
+	// sleep(500);
+	// clickOn("OK");
 
 // 	//test case for TextField
 // 	TextField textField = robot.lookup("#textFieldA").query();
@@ -113,18 +113,18 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	doubleClickOn("Virat");
 // 	sleep(500);
 
-// 	clickOn("#listViewBtn");
-//     sleep(500);
+	clickOn("#listViewBtn");
+    sleep(500);
 
-//     clickOn("#listView")
-//         .press(KeyCode.CONTROL)
-//         .clickOn("Java")
-//         .sleep(500)
-//         .clickOn("PHP")
-//         .sleep(500)
-//         .clickOn("C++")
-//         .sleep(500)
-//         .release(KeyCode.CONTROL);
+    clickOn("#listView")
+        .press(KeyCode.CONTROL)
+        .clickOn("Java")
+        .sleep(500)
+        .clickOn("PHP")
+        .sleep(500)
+        .clickOn("C++")
+        .sleep(500)
+        .release(KeyCode.CONTROL);
 // }
 
 // //Test case for Button B
