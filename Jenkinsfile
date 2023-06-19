@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'mvn test'
+        sh 'mvn test -Dtestfx.robot=monocle -Dtestfx.headless=true'
       }
     }
 
