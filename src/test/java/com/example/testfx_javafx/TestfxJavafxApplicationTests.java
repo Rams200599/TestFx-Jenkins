@@ -31,11 +31,12 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	// 		System.setProperty("java.awt.headless", "false");
 	// }
 
-	@Override
-        public void init() throws Exception {
-			System.setProperty("testfx.robot", "glass");
-			System.setProperty("testfx.headless", "true");
-         }
+	 @Override
+    public void init() throws Exception {
+        super.init();
+        System.setProperty("testfx.robot", "monocle");
+        System.setProperty("testfx.headless", "true");
+    }
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
