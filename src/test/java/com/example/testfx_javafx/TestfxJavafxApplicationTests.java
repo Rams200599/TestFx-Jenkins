@@ -133,20 +133,20 @@ public void testButtonB(){
 	clickOn("#buttonB");
 	sleep(500);
 
-	FxRobot robot = new FxRobot();
+	// FxRobot robot = new FxRobot();
 
 	//Test case for Label
 	Label label1 = robot.lookup("#label1").query();
 	// assertEquals("Old Password", label1.getText());
 	sleep(500);
 
-	robot.clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
+	clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
 	sleep(500);
 
-	robot.clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
+	clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
 	sleep(500);
 
-	robot.clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
+	clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
 	sleep(500);
 
 	clickOn("#saveButton");
