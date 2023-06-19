@@ -34,7 +34,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	 @Override
     public void init() throws Exception {
         super.init();
-        System.setProperty("testfx.robot", "glass");
+        System.setProperty("testfx.robot", "awt");
         System.setProperty("testfx.headless", "true");
 	// System.setProperty("java.awt.headless", "false");
     }
