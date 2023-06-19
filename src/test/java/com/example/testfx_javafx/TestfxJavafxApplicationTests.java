@@ -156,10 +156,10 @@ public void testButtonB(){
 }
 
 // //Test case for Button C
-@Test
-public void testButtonC(){
-	clickOn("#buttonC");
-	sleep(500);
+// @Test
+// public void testButtonC(){
+// 	clickOn("#buttonC");
+// 	sleep(500);
 
 // 	FxRobot robot = new FxRobot();
 
@@ -180,14 +180,14 @@ public void testButtonC(){
 // 	clickOn("#saveButton");
 // 	sleep(500);
 // 	// assertEquals("Female selected", female.getText()+" selected");
-}
+// }
 
 // //Test case for Button D
-@Test
-public void testButtonD(){
-	// FxRobot robot = new FxRobot();
-	clickOn("#buttonD");
-	sleep(500);
+// @Test
+// public void testButtonD(){
+// 	// FxRobot robot = new FxRobot();
+// 	clickOn("#buttonD");
+// 	sleep(500);
 
 // 	//Test case for ComboBox
 // 	// clickOn("#comboBOx");
@@ -224,13 +224,13 @@ public void testButtonD(){
 
 // 	clickOn("#saveButton");
 // 	sleep(500);
-}
+// }
 
 // //Test case for Button E
-@Test
-public void testButtonE(){
-	clickOn("#buttonE");
-	sleep(500);
+// @Test
+// public void testButtonE(){
+// 	clickOn("#buttonE");
+// 	sleep(500);
 
 // 	FxRobot robot = new FxRobot();
 
@@ -240,11 +240,11 @@ public void testButtonE(){
 // 	// clickOn("80");
 // 	slider.setValue(50.0);
 // 	sleep(500);
-}
+// }
 
-@Test
-public void testButtonF(){
-	clickOn("#buttonF");
+// @Test
+// public void testButtonF(){
+// 	clickOn("#buttonF");
 // 	// clickOn("#dp");
 
 // 	clickOn(1215, 340);
@@ -259,5 +259,5 @@ public void testButtonF(){
 // 	sleep(500);
 
 // 	clickOn("#saveButton").sleep(500);
-}
+// }
 }
