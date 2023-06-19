@@ -12,11 +12,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testfx_javafx.SecondaryController">
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testfx_javafx.SecondaryController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu fx:id="menuButton" text="Menu">
+          <Menu fx:id="menuButton" onAction="#menuAction" text="Menu">
             <items>
               <MenuItem onAction="#handleExit" text="Close" />
                   <MenuItem onAction="#handleTheam" text="Theam" />
@@ -35,7 +35,7 @@
         <items>
           <AnchorPane fx:id="anchorPane2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: pink;">
                <children>
-                  <VBox alignment="CENTER" maxWidth="-Infinity" prefHeight="371.0" prefWidth="176.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <VBox alignment="CENTER" maxWidth="-Infinity" prefHeight="371.0" prefWidth="175.0" spacing="10.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <Button fx:id="buttonA" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" onAction="#btnClickedPageA" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: black;" text="Page A" textFill="#fffefe" VBox.vgrow="NEVER" />
                         <Button fx:id="buttonB" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" onAction="#btnClickedPageB" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: black;" text="Page B" textFill="#fffefe" />
@@ -48,15 +48,16 @@
                </children></AnchorPane>
           <AnchorPane fx:id="anchorPane1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <StackPane fx:id="stackPane" prefHeight="371.0" prefWidth="418.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <StackPane fx:id="stackPane" prefHeight="344.0" prefWidth="417.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <TextField alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="418.0" text="Title">
+                        <TextField alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="393.0" prefWidth="417.0" text="Title">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </TextField>
                      </children>
                   </StackPane>
+
                </children></AnchorPane>
         </items>
       </SplitPane>

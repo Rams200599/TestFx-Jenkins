@@ -2,7 +2,10 @@ package com.example.testfx_javafx;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.URL;
 import java.time.LocalDate;
+import java.util.ResourceBundle;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -10,6 +13,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.geometry.Orientation;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -36,6 +41,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.ToolBar;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.TreeTableView;
@@ -44,6 +50,7 @@ import javafx.scene.control.cell.TreeItemPropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -88,9 +95,12 @@ public class SecondaryController {
     @FXML
     private MenuItem aboutMenu;
 
+    @FXML
+    private BorderPane borderPane;
+
 
     @FXML
-    void btnClickedPageA(ActionEvent event) {
+    void btnClickedPageA(ActionEvent event) throws FileNotFoundException {
         anchorPane1.getChildren().clear();
         anchorPane1.setStyle("-fx-background-color:#ADD8E6");
         TextField root = new TextField("Page A");
@@ -98,6 +108,13 @@ public class SecondaryController {
         root.setPrefWidth(418);
         root.setFont(Font.font("Times New Roman", FontWeight.BOLD, 14));
 
+        //Tool Bar
+        // FileInputStream fis = new FileInputStream("/home/ubuntu/Downloads/download.png");
+        // Image image = new Image(fis,20,20,true,true);
+        // ImageView imageView  = new ImageView(image);
+        // menuButton.setGraphic(imageView);
+
+        //Table View
         Button button = new Button("Table View");
         button.setId("tableViewButton");
 
@@ -199,6 +216,7 @@ public class SecondaryController {
             dialog.setHeaderText("Select a day");
             dialog.showAndWait();
         });
+        
         anchorPane1.getChildren().addAll(button,root,treeViewbtn,listViewBtn,dialogBoxBtn);
     }
 
@@ -450,6 +468,7 @@ public class SecondaryController {
         slider.setShowTickMarks(true);
         slider.setMajorTickUnit(10);
         slider.setMinorTickCount(4);
+        // System.out.println(slider);
 
         ProgressIndicator pi = new ProgressIndicator(0);
         pi.setId("pi");
@@ -471,6 +490,7 @@ public class SecondaryController {
             public void changed(ObservableValue<? extends Number> obj, Number oldVal, Number newVal) {
                 progressBar.setProgress(newVal.doubleValue()/100);
                 pi.setProgress(newVal.doubleValue()/100);
+                System.out.println(newVal);
             }  
         });
 
@@ -592,6 +612,19 @@ public class SecondaryController {
         anchorPane1.getChildren().add(root);
     }
 
+    @FXML
+    void menuAction(ActionEvent event) {
+        Slider volumeSlider = new Slider();
+            volumeSlider.setMin(0);
+            volumeSlider.setMax(100);
+            volumeSlider.setValue(50);
+            volumeSlider.setOrientation(Orientation.HORIZONTAL);
+            volumeSlider.valueProperty().addListener((observale, oldValue, newValue) -> {
+                System.out.println(newValue);
+            });
+    }
+
+
     private static void showAlert(Alert.AlertType alertType, Window owner, String title, String message){
         Alert alert = new Alert(alertType);
         alert.setTitle(title);
@@ -600,5 +633,24 @@ public class SecondaryController {
         alert.initOwner(owner);
         alert.show();
     }
+
+    // @Override
+    // public void initialize(URL location, ResourceBundle resources) {
+    //     try (FileInputStream fis = new FileInputStream("/home/ubuntu/Downloads/download.png")) {
+    //         Image image = new Image(fis,20,20,true,true);
+    //         ImageView imageView  = new ImageView(image);
+    //         menuButton.setGraphic(imageView);
+    //     } catch (IOException e) {
+            
+    //         e.printStackTrace();
+    //     }
+    // }
+
+
+//     @FXML
+//     public void initialize() {
+//     Image icon = new Image(getClass().getResourceAsStream("$PATH_TO_ICON_IMAGE"));
+//     menuButton.setGraphic(new ImageView(icon));
+// }
 }
 
