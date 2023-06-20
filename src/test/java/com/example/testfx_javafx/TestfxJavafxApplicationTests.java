@@ -234,20 +234,19 @@ public void testButtonD(){
 }
 
 //Test case for Button E
-// @Test
-// public void testButtonE(){
-// 	clickOn("#buttonE");
-// 	sleep(500);
+@Test
+public void testButtonE(){
+	clickOn("#buttonE");
+	sleep(500);
 
-	// FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
-	//Test cse for Slider
-	// Slider slider = robot.lookup("#slider").query();
-	// clickOn("#slider");
-	// // clickOn("80");
-	// slider.setValue(50.0);
-	// sleep(500);
-// }
+	// Test cse for Slider
+	Slider slider = robot.lookup("#slider").query();
+	clickOn("#slider");
+	slider.setValue(50.0);
+	sleep(500);
+}
 
 // @Test
 // public void testButtonF(){
