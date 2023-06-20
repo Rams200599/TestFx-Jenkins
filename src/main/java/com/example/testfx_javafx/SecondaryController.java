@@ -98,6 +98,9 @@ public class SecondaryController {
     @FXML
     private BorderPane borderPane;
 
+     @FXML
+    private MenuItem theam;
+
 
     @FXML
     void btnClickedPageA(ActionEvent event) throws FileNotFoundException {
@@ -653,4 +656,3 @@ public class SecondaryController {
 //     menuButton.setGraphic(new ImageView(icon));
 // }
 }
-
