@@ -56,7 +56,6 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
                 // primaryStage.setScene(scene);
                 // primaryStage.setTitle("HCI");
                 // primaryStage.show();
-
 	}
 
 	private static Parent loadFXML(String fxml) throws IOException {
@@ -76,7 +75,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
         // robot.clickOn("#buttonA");
 
 // 	//Robot object created
-	FxRobot robot = new FxRobot();
+	// FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
 	// robot.clickOn("#dialogBoxBtn");
@@ -140,10 +139,10 @@ public void testButtonB(){
 	clickOn("#buttonB");
 	sleep(500);
 
-	// FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
 	//Test case for Label
-	// Label label1 = robot.lookup("#label1").query();
+	Label label1 = robot.lookup("#label1").query();
 	// assertEquals("Old Password", label1.getText());
 	// sleep(500);
 
