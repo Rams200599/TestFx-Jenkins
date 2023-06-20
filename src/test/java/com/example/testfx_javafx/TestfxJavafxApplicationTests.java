@@ -28,7 +28,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	private SecondaryController secondaryController;
 
 	@BeforeClass
-	public static void setUpHeadlessMode(){
+	public  void setUpHeadlessMode(){
 		           System.setProperty("testfx.robot", "monocle");
                            // System.setProperty("testfx.headless", "true");
 		           System.setProperty("java.awt.headless", "true");
