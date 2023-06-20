@@ -30,3 +30,4 @@ public class TestfxJavafxApplication extends Application {
         launch();
     }
 }
+
