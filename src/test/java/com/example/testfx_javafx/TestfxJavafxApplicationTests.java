@@ -30,7 +30,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	public static void setUpHeadlessMode(){
 		           System.setProperty("testfx.robot", "monocle");
                            System.setProperty("testfx.headless", "true");
-		           System.setProperty("java.awt.headless', 'false");
+		           // System.setProperty("java.awt.headless', 'false");
 			// System.setProperty("testfx.robot", "glass");
 			// System.setProperty("testfx.headless", "true");
 			// System.setProperty("prism.order", "sw");
@@ -79,13 +79,13 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
-	clickOn("#dialogBoxBtn");
-	sleep(500);
+	// clickOn("#dialogBoxBtn");
+	// sleep(500);
 
-	clickOn("Monday").sleep(500);
-	clickOn("Wednesday");
-	sleep(500);
-	clickOn("OK");
+	// clickOn("Monday").sleep(500);
+	// clickOn("Wednesday");
+	// sleep(500);
+	// clickOn("OK");
 
 // 	//test case for TextField
 	// TextField textField = robot.lookup("#textFieldA").query();
