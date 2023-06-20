@@ -79,7 +79,6 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 // 	//Test case for Dialog 
 	// robot.clickOn("#dialogBoxBtn");
-		((FxRobot) robot.lookup("#dialogBoxBtn")).clickOn("#dialogBoxBtn");
 	// sleep(500);
 
 	// robot.clickOn("Monday").sleep(500);
@@ -145,22 +144,23 @@ public void testButtonB(){
 	//Test case for Label
 	Label label1 = robot.lookup("#label1").query();
 	// assertEquals("Old Password", label1.getText());
-	// sleep(500);
+	sleep(500);
 
 	robot.clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
-	// sleep(500);
+	sleep(500);
 
-	// clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
-	// sleep(500);
+	robot.clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
+	sleep(500);
 
-	// clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
-	// sleep(500);
+	robot.clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
+	sleep(500);
 
-	// clickOn("#saveButton");
-	// sleep(500);
+	clickOn("#saveButton");
+	sleep(500);
 
-	// clickOn("OK");
+	clickOn("OK");
 }
+
 
 @Test
 public void menuBtn(){
