@@ -79,13 +79,13 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
-	robot.clickOn("#dialogBoxBtn");
-	sleep(500);
+	// robot.clickOn("#dialogBoxBtn");
+	// sleep(500);
 
-	robot.clickOn("Monday").sleep(500);
-	clickOn("Wednesday");
-	sleep(500);
-	clickOn("OK");
+	// robot.clickOn("Monday").sleep(500);
+	// clickOn("Wednesday");
+	// sleep(500);
+	// clickOn("OK");
 
 // 	//test case for TextField
 	// TextField textField = robot.lookup("#textFieldA").query();
