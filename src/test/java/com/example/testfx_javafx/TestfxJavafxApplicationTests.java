@@ -178,19 +178,19 @@ public void testButtonC(){
 
 // 	Test case for RadioButton
 	RadioButton male = robot.lookup("#male").query();
-	robot.clickOn("#male");
+	clickOn("#male");
 	sleep(500);
 
-	robot.clickOn("#saveButton");
+	clickOn("#saveButton");
 	sleep(500);
 
 // 	// assertEquals("Male selected", male.getText()+" selected");
 
 	RadioButton female = robot.lookup("#female").query();
-	robot.clickOn("#female");
+	clickOn("#female");
 	sleep(500);
 
-	robot.clickOn("#saveButton");
+	clickOn("#saveButton");
 	sleep(500);
 // 	assertEquals("Female selected", female.getText()+" selected");
 }
