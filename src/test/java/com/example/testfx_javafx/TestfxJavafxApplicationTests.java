@@ -2,7 +2,7 @@ package com.example.testfx_javafx;
 
 import org.junit.jupiter.api.Test;
 import org.junit.BeforeClass;
-// import org.testfx.api.FxRobot;
+import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.ApplicationTest;
 
 import javafx.fxml.FXMLLoader;
@@ -73,16 +73,16 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
         // robot.clickOn("#buttonA");
 
 // 	//Robot object created
-// 	FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
-	// clickOn("#dialogBoxBtn");
-	// sleep(500);
+	robot.clickOn("#dialogBoxBtn");
+	sleep(500);
 
-	// clickOn("Monday").sleep(500);
-	// clickOn("Wednesday");
-	// sleep(500);
-	// clickOn("OK");
+	robot.clickOn("Monday").sleep(500);
+	clickOn("Wednesday");
+	sleep(500);
+	clickOn("OK");
 
 // 	//test case for TextField
 	// TextField textField = robot.lookup("#textFieldA").query();
