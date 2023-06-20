@@ -31,16 +31,14 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	private static Scene scene;
 	private SecondaryController secondaryController;
 
-	// @BeforeClass
-	// public static void setUpHeadlessMode(){
-	// 	if(Boolean.getBoolean("hedless")){
-	// 		System.setProperty("testfx.robot", "glass");
-	// 		System.setProperty("testfx.headless", "true");
-	// 		System.setProperty("prism.order", "sw");
-	// 		System.setProperty("prism.text", "t2k");
-	// 		System.setProperty("java.awt.headless", "true");
-	// 	}
-	// }
+	@BeforeClass
+	public static void setUpHeadlessMode(){
+			System.setProperty("testfx.robot", "monocle");
+			System.setProperty("testfx.headless", "true");
+			// System.setProperty("prism.order", "sw");
+			// System.setProperty("prism.text", "t2k");
+			System.setProperty("java.awt.headless", "true");
+	}
 
 	
 
