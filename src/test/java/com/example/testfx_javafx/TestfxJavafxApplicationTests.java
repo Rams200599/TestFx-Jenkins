@@ -29,16 +29,34 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	private static Scene scene;
 	private SecondaryController secondaryController;
 
+	// @BeforeClass
+	// public  void setUpHeadlessMode(){
+	// 	           System.setProperty("testfx.robot", "monocle");
+        //              // System.setProperty("testfx.headless", "true");
+	// 	           System.setProperty("java.awt.headless", "true");
+	// 		// System.setProperty("testfx.robot", "glass");
+	// 		// System.setProperty("testfx.headless", "true");
+	// 		// System.setProperty("prism.order", "sw");
+	// 		// System.setProperty("prism.text", "t2k");
+	// 		// System.setProperty("java.awt.headless", "true");
+	// }
+
 	@BeforeClass
-	public  void setUpHeadlessMode(){
-		           System.setProperty("testfx.robot", "monocle");
-                           // System.setProperty("testfx.headless", "true");
+	public static void setUpHeadlessMode(){
+		if(Boolean.getBoolean("hedless")){
+			   System.setProperty("testfx.robot", "monocle");
+        //              // System.setProperty("testfx.headless", "true");
 		           System.setProperty("java.awt.headless", "true");
-			// System.setProperty("testfx.robot", "glass");
-			// System.setProperty("testfx.headless", "true");
-			// System.setProperty("prism.order", "sw");
-			// System.setProperty("prism.text", "t2k");
-			// System.setProperty("java.awt.headless", "true");
+	// 		// System.setProperty("testfx.robot", "glass");
+	// 		// System.setProperty("testfx.headless", "true");
+	// 		// System.setProperty("prism.order", "sw");
+	// 		// System.setProperty("prism.text", "t2k");
+	// 		// System.setProperty("java.awt.headless", "true");
+		}
+
+		FxToolkit.registerPrimaryStage();
+		FxToolkit.setupApplication(TestfxJavafxApplication.class);
+		FxToolkit.showStage();
 	}
 	
 	@Override
@@ -47,13 +65,21 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 		// primaryStage.setScene(scene);
 		// primaryStage.setTitle("HCI");
 		// primaryStage.show();
-		application = new TestfxJavafxApplication();
-		application.start(primaryStage);
+		// application = new TestfxJavafxApplication();
+		// application.start(primaryStage);
 
 		// scene = new Scene(loadFXML("secondary"), 600,400);
                 // primaryStage.setScene(scene);
                 // primaryStage.setTitle("HCI");
                 // primaryStage.show();
+
+		Platform.runLater(() -> {
+			try {
+				new TestfxJavafxApplication().start(primaryStage);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		});
 	}
 
 	private static Parent loadFXML(String fxml) throws IOException {
@@ -76,8 +102,6 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
-	Button dialogBoxBtn = new Button();
-        dialogBoxBtn.setId("dialogBoxBtn");
 	robot.clickOn("#dialogBoxBtn");
 	sleep(500);
 
