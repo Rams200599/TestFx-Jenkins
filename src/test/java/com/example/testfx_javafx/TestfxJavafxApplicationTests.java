@@ -169,31 +169,31 @@ public void testButtonB(){
 }
 
 //Test case for Button C
-// @Test
-// public void testButtonC(){
-// 	clickOn("#buttonC");
-// 	sleep(500);
+@Test
+public void testButtonC(){
+	clickOn("#buttonC");
+	sleep(500);
 
-// 	FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
-	// Test case for RadioButton
-	// RadioButton male = robot.lookup("#male").query();
-	// clickOn("#male");
-	// sleep(500);
+	Test case for RadioButton
+	RadioButton male = robot.lookup("#male").query();
+	clickOn("#male");
+	sleep(500);
 
-	// clickOn("#saveButton");
-	// sleep(500);
+	clickOn("#saveButton");
+	sleep(500);
 
-	// // assertEquals("Male selected", male.getText()+" selected");
+	// assertEquals("Male selected", male.getText()+" selected");
 
-	// RadioButton female = robot.lookup("#female").query();
-	// clickOn("#female");
-	// sleep(500);
+	RadioButton female = robot.lookup("#female").query();
+	clickOn("#female");
+	sleep(500);
 
-	// clickOn("#saveButton");
-	// sleep(500);
-	// assertEquals("Female selected", female.getText()+" selected");
-// }
+	clickOn("#saveButton");
+	sleep(500);
+	assertEquals("Female selected", female.getText()+" selected");
+}
 
 //Test case for Button D
 // @Test
