@@ -75,7 +75,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
         // robot.clickOn("#buttonA");
 
 // 	//Robot object created
-	// FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
 	// robot.clickOn("#dialogBoxBtn");
