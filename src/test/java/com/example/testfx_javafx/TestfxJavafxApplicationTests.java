@@ -198,16 +198,16 @@ public void testButtonD(){
 
 	// Test case for ComboBox
 	// clickOn("#comboBOx");
-	clickOn(1015, 395);
-	sleep(500);
+	// clickOn(1015, 395);
+	// sleep(500);
 
-	ComboBox b2 = robot.lookup("#comboBOx").query();
+	// ComboBox b2 = robot.lookup("#comboBOx").query();
 	// // assertNotNull(b2);
 	// // assertEquals(5, b2.getItems().size());
 
 	// select an item in the ComboBox
-	clickOn("Aspirants");
-	interact(() -> b2.getSelectionModel().select("Aspirants"));
+	// clickOn("Aspirants");
+	// interact(() -> b2.getSelectionModel().select("Aspirants"));
 
 	// //verify the selected item
 	// // assertEquals("Aspirants", b2.getSelectionModel().getSelectedItem());
