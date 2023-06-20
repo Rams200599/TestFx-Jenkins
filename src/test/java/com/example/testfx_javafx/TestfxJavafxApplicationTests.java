@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import java.io.IOException;
 import javafx.scene.Scene;
 import org.testfx.api.FxToolkit;
+import javafx.application.Platform;
 
 
 import javafx.scene.control.ChoiceBox;
