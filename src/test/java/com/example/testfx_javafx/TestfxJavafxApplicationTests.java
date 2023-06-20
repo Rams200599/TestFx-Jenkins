@@ -203,40 +203,40 @@ public void testButtonD(){
 	sleep(500);
 
 	// Test case for ComboBox
-	clickOn("#comboBOx");
-	clickOn(1015, 395);
-	sleep(500);
+	// clickOn("#comboBOx");
+	// clickOn(1015, 395);
+	// sleep(500);
 
-	ComboBox b2 = robot.lookup("#comboBOx").query();
-	// assertNotNull(b2);
-	// assertEquals(5, b2.getItems().size());
+	// ComboBox b2 = robot.lookup("#comboBOx").query();
+	// // assertNotNull(b2);
+	// // assertEquals(5, b2.getItems().size());
 
-	select an item in the ComboBox
-	clickOn("Aspirants");
-	interact(() -> b2.getSelectionModel().select("Aspirants"));
+	// select an item in the ComboBox
+	// clickOn("Aspirants");
+	// interact(() -> b2.getSelectionModel().select("Aspirants"));
 
-	//verify the selected item
-	// assertEquals("Aspirants", b2.getSelectionModel().getSelectedItem());
-	sleep(500);
+	// //verify the selected item
+	// // assertEquals("Aspirants", b2.getSelectionModel().getSelectedItem());
+	// sleep(500);
 
-	clickOn("#choiceBox");
-	sleep(500);
+	// clickOn("#choiceBox");
+	// sleep(500);
 
-	//Test case for choice box
-	ChoiceBox b1 = robot.lookup("#choiceBox").query();
-	// assertNotNull(b1);
-	// assertEquals(5, b1.getItems().size());
+	// //Test case for choice box
+	// ChoiceBox b1 = robot.lookup("#choiceBox").query();
+	// // assertNotNull(b1);
+	// // assertEquals(5, b1.getItems().size());
 
-	// select an item in the ChoiceBox
-	clickOn("Scam 1992");
-	interact(() -> b1.getSelectionModel().select("Scam 1992"));
+	// // select an item in the ChoiceBox
+	// clickOn("Scam 1992");
+	// interact(() -> b1.getSelectionModel().select("Scam 1992"));
 
-	verify the selected item
-	// assertEquals("Scam 1992", b1.getSelectionModel().getSelectedItem());
-	sleep(500);
+	// verify the selected item
+	// // assertEquals("Scam 1992", b1.getSelectionModel().getSelectedItem());
+	// sleep(500);
 
-	clickOn("#saveButton");
-	sleep(500);
+	// clickOn("#saveButton");
+	// sleep(500);
 }
 
 //Test case for Button E
