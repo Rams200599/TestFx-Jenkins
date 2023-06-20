@@ -5,6 +5,7 @@ import java.text.Normalizer.Form;
 import java.util.concurrent.TimeoutException;
 
 import org.junit.BeforeClass;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
@@ -31,13 +32,14 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	private static Scene scene;
 	private SecondaryController secondaryController;
 
-	@BeforeClass
+	@BeforeAll
 	public static void setUpHeadlessMode(){
-			System.setProperty("testfx.robot", "monocle");
+			System.setProperty("testfx.robot", "glass");
 			System.setProperty("testfx.headless", "true");
 			// System.setProperty("prism.order", "sw");
 			// System.setProperty("prism.text", "t2k");
 			System.setProperty("java.awt.headless", "true");
+		        System.setProperty("monocle.platform", "Headless");
 	}
 
 	
