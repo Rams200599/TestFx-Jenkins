@@ -207,7 +207,7 @@ public void testButtonD(){
 	clickOn(1015, 395);
 	sleep(500);
 
-	// ComboBox b2 = robot.lookup("#comboBOx").query();
+	ComboBox b2 = robot.lookup("#comboBOx").query();
 	// // assertNotNull(b2);
 	// // assertEquals(5, b2.getItems().size());
 
