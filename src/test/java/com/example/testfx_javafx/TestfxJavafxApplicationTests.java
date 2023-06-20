@@ -34,7 +34,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 	@BeforeAll
 	public static void setUpHeadlessMode(){
-			System.setProperty("testfx.robot", "monocle");
+			System.setProperty("testfx.robot", "awt");
 			System.setProperty("testfx.headless", "true");
 			// System.setProperty("prism.order", "sw");
 			// System.setProperty("prism.text", "t2k");
