@@ -56,9 +56,9 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	// 		// System.setProperty("java.awt.headless", "true");
 		}
 
-		FxToolkit.registerPrimaryStage();
-		FxToolkit.setupApplication(TestfxJavafxApplication.class);
-		FxToolkit.showStage();
+		// FxToolkit.registerPrimaryStage();
+		// FxToolkit.setupApplication(TestfxJavafxApplication.class);
+		// FxToolkit.showStage();
 	}
 	
 	@Override
