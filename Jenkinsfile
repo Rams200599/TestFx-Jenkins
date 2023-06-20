@@ -8,9 +8,17 @@ pipeline {
       }
     }
 
-    stage('Build and Test') {
+    stage(' Test') {
       steps {
         sh 'export DISPLAY=:99.0 && mvn test -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw'
+        echo 'Test Done'
+      }
+    }
+
+    stage('Build') {
+      steps {
+        sh 'mvn clean package -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw'
+        echo 'Build Done'
       }
     }
 
