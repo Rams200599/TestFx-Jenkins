@@ -66,18 +66,8 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 		// primaryStage.setScene(new Scene(mainNode));
 		// primaryStage.show();
 		// primaryStage.toFront();
-
 	}
-	// @After
-	// public void tearDown() throws Exception {
-	// 	FxToolkit.hideStage();
-	// 	release(new KeyCode[] {});
-	// 	release(new MouseButton[] {});
-	// }
 	
-
-	
-
 	/***************************TestFx-Test-Cases******************************/
 	@Test
 	public void testButtonA(){
@@ -86,12 +76,12 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	clickOn("#buttonA");
 
 	//Robot object created
-	// FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
 	//Test case for Dialog 
-	// clickOn("#dialogBoxBtn");
-	// // robot.lookup("#dialogBoxBtn");
-	// sleep(500);
+	clickOn("#dialogBoxBtn");
+	// robot.lookup("#dialogBoxBtn");
+	sleep(500);
 
 	// clickOn("Monday").sleep(500);
 	// clickOn("Wednesday");
