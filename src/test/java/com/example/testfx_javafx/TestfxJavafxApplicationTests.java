@@ -174,24 +174,24 @@ public void testButtonC(){
 	clickOn("#buttonC");
 	sleep(500);
 
-// 	FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
 // 	Test case for RadioButton
-// 	RadioButton male = robot.lookup("#male").query();
-// 	clickOn("#male");
-// 	sleep(500);
+	RadioButton male = robot.lookup("#male").query();
+	robot.clickOn("#male");
+	sleep(500);
 
-// 	clickOn("#saveButton");
-// 	sleep(500);
+	robot.clickOn("#saveButton");
+	sleep(500);
 
 // 	// assertEquals("Male selected", male.getText()+" selected");
 
-// 	RadioButton female = robot.lookup("#female").query();
-// 	clickOn("#female");
-// 	sleep(500);
+	RadioButton female = robot.lookup("#female").query();
+	robot.clickOn("#female");
+	sleep(500);
 
-// 	clickOn("#saveButton");
-// 	sleep(500);
+	robot.clickOn("#saveButton");
+	sleep(500);
 // 	assertEquals("Female selected", female.getText()+" selected");
 }
 
