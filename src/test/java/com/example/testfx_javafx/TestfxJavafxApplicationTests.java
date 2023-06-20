@@ -177,67 +177,67 @@ public void testButtonC(){
 	FxRobot robot = new FxRobot();
 
 // 	Test case for RadioButton
-	RadioButton male = robot.lookup("#male").query();
-	clickOn("#male");
-	sleep(500);
-
-	clickOn("#saveButton");
-	sleep(500);
-
-// 	// assertEquals("Male selected", male.getText()+" selected");
-
-	RadioButton female = robot.lookup("#female").query();
-	clickOn("#female");
-	sleep(500);
-
-	clickOn("#saveButton");
-	sleep(500);
-// 	assertEquals("Female selected", female.getText()+" selected");
-}
-
-//Test case for Button D
-// @Test
-// public void testButtonD(){
-// 	FxRobot robot = new FxRobot();
-// 	clickOn("#buttonD");
-// 	sleep(500);
-
-	//Test case for ComboBox
-	// clickOn("#comboBOx");
-	// clickOn(1015, 395);
-	// sleep(500);
-
-	// ComboBox b2 = robot.lookup("#comboBOx").query();
-	// assertNotNull(b2);
-	// assertEquals(5, b2.getItems().size());
-
-	//select an item in the ComboBox
-	// clickOn("Aspirants");
-	// interact(() -> b2.getSelectionModel().select("Aspirants"));
-
-	// //verify the selected item
-	// // assertEquals("Aspirants", b2.getSelectionModel().getSelectedItem());
-	// sleep(500);
-
-	// clickOn("#choiceBox");
-	// sleep(500);
-
-	// //Test case for choice box
-	// ChoiceBox b1 = robot.lookup("#choiceBox").query();
-	// // assertNotNull(b1);
-	// // assertEquals(5, b1.getItems().size());
-
-	// // select an item in the ChoiceBox
-	// clickOn("Scam 1992");
-	// interact(() -> b1.getSelectionModel().select("Scam 1992"));
-
-	//verify the selected item
-	// assertEquals("Scam 1992", b1.getSelectionModel().getSelectedItem());
+	// RadioButton male = robot.lookup("#male").query();
+	// clickOn("#male");
 	// sleep(500);
 
 	// clickOn("#saveButton");
 	// sleep(500);
-// }
+
+// 	// assertEquals("Male selected", male.getText()+" selected");
+
+	// RadioButton female = robot.lookup("#female").query();
+	// clickOn("#female");
+	// sleep(500);
+
+	// clickOn("#saveButton");
+	// sleep(500);
+// 	assertEquals("Female selected", female.getText()+" selected");
+}
+
+//Test case for Button D
+@Test
+public void testButtonD(){
+	FxRobot robot = new FxRobot();
+	clickOn("#buttonD");
+	sleep(500);
+
+	// Test case for ComboBox
+	clickOn("#comboBOx");
+	clickOn(1015, 395);
+	sleep(500);
+
+	ComboBox b2 = robot.lookup("#comboBOx").query();
+	// assertNotNull(b2);
+	// assertEquals(5, b2.getItems().size());
+
+	select an item in the ComboBox
+	clickOn("Aspirants");
+	interact(() -> b2.getSelectionModel().select("Aspirants"));
+
+	//verify the selected item
+	// assertEquals("Aspirants", b2.getSelectionModel().getSelectedItem());
+	sleep(500);
+
+	clickOn("#choiceBox");
+	sleep(500);
+
+	//Test case for choice box
+	ChoiceBox b1 = robot.lookup("#choiceBox").query();
+	// assertNotNull(b1);
+	// assertEquals(5, b1.getItems().size());
+
+	// select an item in the ChoiceBox
+	clickOn("Scam 1992");
+	interact(() -> b1.getSelectionModel().select("Scam 1992"));
+
+	verify the selected item
+	// assertEquals("Scam 1992", b1.getSelectionModel().getSelectedItem());
+	sleep(500);
+
+	clickOn("#saveButton");
+	sleep(500);
+}
 
 //Test case for Button E
 // @Test
