@@ -112,19 +112,19 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	clickOn("#treeViewButton");
 	sleep(500);
 
-	// //Test case for TreeTableView
-	// TreeTableView treeTableView = robot.lookup("#treeTableView").query();
-	// // assertNotNull(treeTableView);
-	// // assertEquals(3, treeTableView.getColumns().size());
+	//Test case for TreeTableView
+	TreeTableView treeTableView = robot.lookup("#treeTableView").query();
+	// assertNotNull(treeTableView);
+	// assertEquals(3, treeTableView.getColumns().size());
 
-	// doubleClickOn("celebrities");
-	// sleep(500);
+	doubleClickOn("celebrities");
+	sleep(500);
 
-	// doubleClickOn("Alia");
-	// sleep(500);
+	doubleClickOn("Alia");
+	sleep(500);
 
-	// doubleClickOn("Virat");
-	// sleep(500);
+	doubleClickOn("Virat");
+	sleep(500);
 
 	clickOn("#listViewBtn");
     sleep(500);
