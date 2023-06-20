@@ -23,8 +23,8 @@ import javafx.stage.Stage;
 class TestfxJavafxApplicationTests extends ApplicationTest{
 
 	private TestfxJavafxApplication application;
-	// private static Scene scene;
-	// private SecondaryController secondaryController;
+	private static Scene scene;
+	private SecondaryController secondaryController;
 
 	@BeforeClass
 	public static void setUpHeadlessMode(){
@@ -37,7 +37,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 			// System.setProperty("prism.text", "t2k");
 			// System.setProperty("java.awt.headless", "true");
 	}
-	}
+	
 
 	//  @Override
  //    public void init() throws Exception {
