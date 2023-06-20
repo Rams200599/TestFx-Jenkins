@@ -8,6 +8,7 @@ import org.testfx.framework.junit5.ApplicationTest;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import java.io.IOException;
+import javafx.scene.Scene;
 
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
