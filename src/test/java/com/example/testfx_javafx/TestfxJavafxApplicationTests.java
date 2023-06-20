@@ -243,7 +243,7 @@ public void testButtonE(){
 
 	// Test cse for Slider
 	Slider slider = robot.lookup("#slider").query();
-	clickOn("#slider");
+	robot.clickOn("#slider");
 	slider.setValue(50.0);
 	sleep(500);
 }
