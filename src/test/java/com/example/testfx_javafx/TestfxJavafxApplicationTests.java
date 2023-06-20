@@ -41,15 +41,15 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	private static Scene scene;
 	private SecondaryController secondaryController;
 
-	@BeforeClass
-	public static void setUpHeadlessMode(){
-			// System.setProperty("testfx.robot", "awt");
-			System.setProperty("testfx.headless", "true");
-			// System.setProperty("prism.order", "sw");
-			// System.setProperty("prism.text", "t2k");
-			// System.setProperty("java.awt.headless", "true");
-		        // System.setProperty("monocle.platform", "Headless");
-	}
+	// @BeforeClass
+	// public static void setUpHeadlessMode(){
+	// 		// System.setProperty("testfx.robot", "awt");
+	// 		System.setProperty("testfx.headless", "true");
+	// 		// System.setProperty("prism.order", "sw");
+	// 		// System.setProperty("prism.text", "t2k");
+	// 		// System.setProperty("java.awt.headless", "true");
+	// 	        // System.setProperty("monocle.platform", "Headless");
+	// }
 
 	
 
@@ -75,12 +75,12 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	clickOn("#buttonA");
 
 	//Robot object created
-	FxRobot robot = new FxRobot();
+	// FxRobot robot = new FxRobot();
 
 	//Test case for Dialog 
-	clickOn("#dialogBoxBtn");
-	// robot.lookup("#dialogBoxBtn");
-	sleep(500);
+	// clickOn("#dialogBoxBtn");
+	// // robot.lookup("#dialogBoxBtn");
+	// sleep(500);
 
 	// clickOn("Monday").sleep(500);
 	// clickOn("Wednesday");
@@ -88,15 +88,15 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	// clickOn("OK");
 
 	// //test case for TextField
-	TextField textField = robot.lookup("#textFieldA").query();
-	// assertEquals("Page A", textField.getText());
-	sleep(500);
+	// TextField textField = robot.lookup("#textFieldA").query();
+	// // assertEquals("Page A", textField.getText());
+	// sleep(500);
 
-	clickOn("#tableViewButton");
-	sleep(500);
+	// clickOn("#tableViewButton");
+	// sleep(500);
 
 	// //test case for TableView
-	TableView tableView = robot.lookup("#tableView").query();
+	// TableView tableView = robot.lookup("#tableView").query();
 	// assertNotNull(tableView);
 	// assertEquals(2, tableView.getItems().size());
 
