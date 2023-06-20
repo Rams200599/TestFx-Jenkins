@@ -77,27 +77,21 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	@Test
 	public void testButtonA(){
 	//Click the button
-	// FxRobot robot = new FxRobot();
-	// clickOn("#buttonA");
+	FxRobot robot = new FxRobot();
+	clickOn("#buttonA");
 
 	//Robot object created
 	// FxRobot robot = new FxRobot();
 
 	//Test case for Dialog 
-	// clickOn("#dialogBoxBtn");
-	// // robot.lookup("#dialogBoxBtn");
-	// sleep(500);
+	clickOn("#dialogBoxBtn");
+	// robot.lookup("#dialogBoxBtn");
+	sleep(500);
 
-	// clickOn("Monday").sleep(500);
-	// clickOn("Wednesday");
-	// sleep(500);
-	// clickOn("OK");
-
-	   // FxRobot robot = new FxRobot();
-    //        robot.clickOn("#buttonA");
-    //        WaitForAsyncUtils.waitFor(2, TimeUnit.SECONDS, () -> 
-    //        robot.lookup("#dialogBoxBtn").match(NodeQueryUtils.isVisible()).tryQuery().isPresent());
-    //        robot.clickOn("Monday").sleep(500);
+	clickOn("Monday").sleep(500);
+	clickOn("Wednesday");
+	sleep(500);
+	clickOn("OK");
 
 	// //test case for TextField
 	// TextField textField = robot.lookup("#textFieldA").query();
