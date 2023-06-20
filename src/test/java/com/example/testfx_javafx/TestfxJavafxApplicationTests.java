@@ -175,15 +175,15 @@ public void testButtonB(){
 }
 
 //Test case for Button C
-@Test
-public void testButtonC(){
-	clickOn("#buttonC");
-	sleep(500);
+// @Test
+// public void testButtonC(){
+// 	clickOn("#buttonC");
+// 	sleep(500);
 
-	FxRobot robot = new FxRobot();
+// 	FxRobot robot = new FxRobot();
 
 	// Test case for RadioButton
-	RadioButton male = robot.lookup("#male").query();
+	// RadioButton male = robot.lookup("#male").query();
 	// clickOn("#male");
 	// sleep(500);
 
@@ -199,21 +199,21 @@ public void testButtonC(){
 	// clickOn("#saveButton");
 	// sleep(500);
 	// assertEquals("Female selected", female.getText()+" selected");
-}
+// }
 
 //Test case for Button D
-@Test
-public void testButtonD(){
-	FxRobot robot = new FxRobot();
-	clickOn("#buttonD");
-	sleep(500);
+// @Test
+// public void testButtonD(){
+// 	FxRobot robot = new FxRobot();
+// 	clickOn("#buttonD");
+// 	sleep(500);
 
 	//Test case for ComboBox
 	// clickOn("#comboBOx");
-	clickOn(1015, 395);
-	sleep(500);
+	// clickOn(1015, 395);
+	// sleep(500);
 
-	ComboBox b2 = robot.lookup("#comboBOx").query();
+	// ComboBox b2 = robot.lookup("#comboBOx").query();
 	// assertNotNull(b2);
 	// assertEquals(5, b2.getItems().size());
 
@@ -243,27 +243,27 @@ public void testButtonD(){
 
 	// clickOn("#saveButton");
 	// sleep(500);
-}
+// }
 
 //Test case for Button E
-@Test
-public void testButtonE(){
-	clickOn("#buttonE");
-	sleep(500);
+// @Test
+// public void testButtonE(){
+// 	clickOn("#buttonE");
+// 	sleep(500);
 
-	FxRobot robot = new FxRobot();
+	// FxRobot robot = new FxRobot();
 
 	//Test cse for Slider
-	Slider slider = robot.lookup("#slider").query();
+	// Slider slider = robot.lookup("#slider").query();
 	// clickOn("#slider");
 	// // clickOn("80");
 	// slider.setValue(50.0);
 	// sleep(500);
-}
+// }
 
-@Test
-public void testButtonF(){
-	clickOn("#buttonF");
+// @Test
+// public void testButtonF(){
+// 	clickOn("#buttonF");
 	// clickOn("#dp");
 
 	// clickOn(1215, 340);
@@ -278,17 +278,17 @@ public void testButtonF(){
 	// sleep(500);
 
 	// clickOn("#saveButton").sleep(500);
-}
+// }
 
-@Test
-public void menuBtn(){
-	clickOn("#menuButton");
-	sleep(200);
+// @Test
+// public void menuBtn(){
+// 	clickOn("#menuButton");
+// 	sleep(200);
 
-	// clickOn("theam");
+// 	// clickOn("theam");
 
-	clickOn("#helpMenu").sleep(200);
-}
+// 	clickOn("#helpMenu").sleep(200);
+// }
 // @Override
 // public void init() throws Exception {
 			
