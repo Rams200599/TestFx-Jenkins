@@ -121,18 +121,18 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	// sleep(500);
 
 	clickOn("#listViewBtn");
-    sleep(500);
+        sleep(500);
 
-    clickOn("#listView")
-        .press(KeyCode.CONTROL)
-        .clickOn("Java")
-        .sleep(500)
-        .clickOn("PHP")
-        .sleep(500)
-        .clickOn("C++")
-        .sleep(500)
-        .release(KeyCode.CONTROL);
-}
+        clickOn("#listView")
+            .press(KeyCode.CONTROL)
+            .clickOn("Java")
+            .sleep(500)
+            .clickOn("PHP")
+            .sleep(500)
+            .clickOn("C++")
+            .sleep(500)
+            .release(KeyCode.CONTROL);
+  }
 
 //Test case for Button B
 @Test
