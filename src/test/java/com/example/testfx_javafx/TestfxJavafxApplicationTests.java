@@ -1,5 +1,9 @@
 package com.example.testfx_javafx;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
 import java.io.IOException;
 import java.text.Normalizer.Form;
 import java.util.concurrent.TimeoutException;
@@ -11,6 +15,7 @@ import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationTest;
+import org.testfx.matcher.control.TableViewMatchers;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
@@ -95,7 +100,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 	// //test case for TextField
 	TextField textField = robot.lookup("#textFieldA").query();
-	// assertEquals("Page A", textField.getText());
+	assertEquals("Page A", textField.getText());
 	sleep(500);
 
 	clickOn("#tableViewButton");
@@ -103,11 +108,11 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 	// //test case for TableView
 	TableView tableView = robot.lookup("#tableView").query();
-	// assertNotNull(tableView);
-	// assertEquals(2, tableView.getItems().size());
+	assertNotNull(tableView);
+	assertEquals(2, tableView.getItems().size());
 
-	// assertTrue(TableViewMatchers.containsRow("Ram", "Pawar", "Ahmednagar").matches(tableView));
-	// assertTrue(TableViewMatchers.containsRow("Ankit", "More", "Jalgaon").matches(tableView));
+	assertTrue(TableViewMatchers.containsRow("Ram", "Pawar", "Ahmednagar").matches(tableView));
+	assertTrue(TableViewMatchers.containsRow("Ankit", "More", "Jalgaon").matches(tableView));
 
 	clickOn("#treeViewButton");
 	sleep(500);
