@@ -19,7 +19,7 @@
           <Menu fx:id="menuButton" onAction="#menuAction" text="Menu">
             <items>
               <MenuItem onAction="#handleExit" text="Close" />
-                  <MenuItem onAction="#handleTheam" text="Theam" />
+                  <MenuItem fx:id="theam" onAction="#handleTheam" text="Theam" />
             </items>
           </Menu>
           <Menu fx:id="helpMenu" text="Help">
