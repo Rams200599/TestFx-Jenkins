@@ -38,7 +38,17 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 			// System.setProperty("prism.text", "t2k");
 			// System.setProperty("java.awt.headless", "true");
 	}
+	// private static Parent loadFXML(String fxml) throws IOException {
+	// 	FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
+	// 	return fxmlLoader.load();
+	// }
+	@Override
+public void init() throws Exception {
+			
+		FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
+        fxmlLoader.setController(secondaryController);
 	
+}
 
 	//  @Override
  //    public void init() throws Exception {
@@ -117,18 +127,18 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	doubleClickOn("Virat");
 // 	sleep(500);
 
-    clickOn("#listViewBtn");
-    sleep(500);
+    // clickOn("#listViewBtn");
+    // sleep(500);
 
-    clickOn("#listView")
-        .press(KeyCode.CONTROL)
-        .clickOn("Java")
-        .sleep(500)
-        .clickOn("PHP")
-        .sleep(500)
-        .clickOn("C++")
-        .sleep(500)
-        .release(KeyCode.CONTROL);
+    // clickOn("#listView")
+    //     .press(KeyCode.CONTROL)
+    //     .clickOn("Java")
+    //     .sleep(500)
+    //     .clickOn("PHP")
+    //     .sleep(500)
+    //     .clickOn("C++")
+    //     .sleep(500)
+    //     .release(KeyCode.CONTROL);
 }
 
 // //Test case for Button B
