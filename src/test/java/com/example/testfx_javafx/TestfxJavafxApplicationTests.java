@@ -75,50 +75,49 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	clickOn("#buttonA");
 
 	//Robot object created
-	// FxRobot robot = new FxRobot();
+	FxRobot robot = new FxRobot();
 
 	//Test case for Dialog 
-	// clickOn("#dialogBoxBtn");
-	// // robot.lookup("#dialogBoxBtn");
-	// sleep(500);
+	clickOn("#dialogBoxBtn");
+	sleep(500);
 
-	// clickOn("Monday").sleep(500);
-	// clickOn("Wednesday");
-	// sleep(500);
-	// clickOn("OK");
+	clickOn("Monday").sleep(500);
+	clickOn("Wednesday");
+	sleep(500);
+	clickOn("OK");
 
 	// //test case for TextField
-	// TextField textField = robot.lookup("#textFieldA").query();
+	TextField textField = robot.lookup("#textFieldA").query();
 	// // assertEquals("Page A", textField.getText());
-	// sleep(500);
+	sleep(500);
 
-	// clickOn("#tableViewButton");
-	// sleep(500);
+	clickOn("#tableViewButton");
+	sleep(500);
 
 	// //test case for TableView
-	// TableView tableView = robot.lookup("#tableView").query();
+	TableView tableView = robot.lookup("#tableView").query();
 	// assertNotNull(tableView);
 	// assertEquals(2, tableView.getItems().size());
 
 	// assertTrue(TableViewMatchers.containsRow("Ram", "Pawar", "Ahmednagar").matches(tableView));
 	// assertTrue(TableViewMatchers.containsRow("Ankit", "More", "Jalgaon").matches(tableView));
 
-	// clickOn("#treeViewButton");
-	// sleep(500);
+	clickOn("#treeViewButton");
+	sleep(500);
 
 	//Test case for TreeTableView
-	// TreeTableView treeTableView = robot.lookup("#treeTableView").query();
+	TreeTableView treeTableView = robot.lookup("#treeTableView").query();
 	// assertNotNull(treeTableView);
 	// assertEquals(3, treeTableView.getColumns().size());
 
-	// doubleClickOn("celebrities");
-	// sleep(500);
+	doubleClickOn("celebrities");
+	sleep(500);
 
-	// doubleClickOn("Alia");
-	// sleep(500);
+	doubleClickOn("Alia");
+	sleep(500);
 
-	// doubleClickOn("Virat");
-	// sleep(500);
+	doubleClickOn("Virat");
+	sleep(500);
 
 	clickOn("#listViewBtn");
         sleep(500);
