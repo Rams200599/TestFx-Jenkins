@@ -17,7 +17,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'mvn clean package -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw'
+        sh 'export DISPLAY=:99.0 && mvn clean package -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw'
         echo 'Build Done'
       }
     }
