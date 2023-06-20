@@ -75,6 +75,8 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
+	Button dialogBoxBtn = new Button();
+        dialogBoxBtn.setId("dialogBoxBtn");
 	robot.clickOn("#dialogBoxBtn");
 	sleep(500);
 
