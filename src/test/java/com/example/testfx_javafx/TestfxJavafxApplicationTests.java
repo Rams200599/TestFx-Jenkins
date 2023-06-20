@@ -251,7 +251,7 @@ public void testButtonD(){
 @Test
 public void testButtonF(){
 	clickOn("#buttonF");
-	clickOn("#dp");
+	// clickOn("#dp");
 
 	clickOn(1215, 340);
 	sleep(500);
