@@ -60,15 +60,15 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 		Parent mainNode = FXMLLoader.load(TestfxJavafxApplication.class.getResource("/MainPage.fxml"));
 		primaryStage.setScene(new Scene(mainNode));
 		primaryStage.show();
-		primaryStage.toFront();
+		// primaryStage.toFront();
 
 	}
-	@After
-	public void tearDown() throws Exception {
-		FxToolkit.hideStage();
-		release(new KeyCode[] {});
-		release(new MouseButton[] {});
-	}
+	// @After
+	// public void tearDown() throws Exception {
+	// 	FxToolkit.hideStage();
+	// 	release(new KeyCode[] {});
+	// 	release(new MouseButton[] {});
+	// }
 	
 
 	
