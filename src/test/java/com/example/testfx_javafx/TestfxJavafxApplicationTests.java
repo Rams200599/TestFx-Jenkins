@@ -5,11 +5,14 @@ import java.text.Normalizer.Form;
 import java.util.concurrent.TimeoutException;
 
 import org.junit.BeforeClass;
+import org.junit.After;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationTest;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -23,6 +26,7 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TreeTableView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 
@@ -80,20 +84,20 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	// FxRobot robot = new FxRobot();
 
 	//Test case for Dialog 
-	// clickOn("#dialogBoxBtn");
-	// // robot.lookup("#dialogBoxBtn");
-	// sleep(500);
+	clickOn("#dialogBoxBtn");
+	// robot.lookup("#dialogBoxBtn");
+	sleep(500);
 
-	// clickOn("Monday").sleep(500);
-	// clickOn("Wednesday");
-	// sleep(500);
-	// clickOn("OK");
+	clickOn("Monday").sleep(500);
+	clickOn("Wednesday");
+	sleep(500);
+	clickOn("OK");
 
-	   FxRobot robot = new FxRobot();
-           robot.clickOn("#buttonA");
-           WaitForAsyncUtils.waitFor(2, TimeUnit.SECONDS, () -> 
-           robot.lookup("#dialogBoxBtn").match(NodeQueryUtils.isVisible()).tryQuery().isPresent());
-           robot.clickOn("Monday").sleep(500);
+	   // FxRobot robot = new FxRobot();
+    //        robot.clickOn("#buttonA");
+    //        WaitForAsyncUtils.waitFor(2, TimeUnit.SECONDS, () -> 
+    //        robot.lookup("#dialogBoxBtn").match(NodeQueryUtils.isVisible()).tryQuery().isPresent());
+    //        robot.clickOn("Monday").sleep(500);
 
 	// //test case for TextField
 	// TextField textField = robot.lookup("#textFieldA").query();
