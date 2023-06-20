@@ -53,19 +53,19 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 		
 	}
-	// private static Parent loadFXML(String fxml) throws IOException {
-	// 	FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
-	// 	return fxmlLoader.load();
-	// }
+	private static Parent loadFXML(String fxml) throws IOException {
+		FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
+		return fxmlLoader.load();
+	}
 
 	
 
 	/***************************TestFx-Test-Cases******************************/
-	// @Test
-	// public void testButtonA(){
+	@Test
+	public void testButtonA(){
 	//Click the button
 	// FxRobot robot = new FxRobot();
-	// clickOn("#buttonA");
+	clickOn("#buttonA");
 
         // FxRobot robot = new FxRobot();
         // robot.clickOn("#buttonA");
@@ -74,8 +74,8 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
-	// clickOn("#dialogBoxBtn");
-	// sleep(500);
+	clickOn("#dialogBoxBtn");
+	sleep(500);
 
 	// clickOn("Monday").sleep(500);
 	// clickOn("Wednesday");
@@ -127,7 +127,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
  //        .clickOn("C++")
  //        .sleep(500)
  //        .release(KeyCode.CONTROL);
-// }
+}
 
 // //Test case for Button B
 @Test
