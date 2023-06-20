@@ -28,35 +28,19 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	private static Scene scene;
 	private SecondaryController secondaryController;
 
-	// @BeforeClass
-	// public  void setUpHeadlessMode(){
-	// 	           System.setProperty("testfx.robot", "monocle");
-        //              // System.setProperty("testfx.headless", "true");
-	// 	           System.setProperty("java.awt.headless", "true");
-	// 		// System.setProperty("testfx.robot", "glass");
-	// 		// System.setProperty("testfx.headless", "true");
-	// 		// System.setProperty("prism.order", "sw");
-	// 		// System.setProperty("prism.text", "t2k");
-	// 		// System.setProperty("java.awt.headless", "true");
-	// }
-
 	@BeforeClass
-	public static void setUpHeadlessMode(){
-		if(Boolean.getBoolean("hedless")){
-			   System.setProperty("testfx.robot", "monocle");
-        //              // System.setProperty("testfx.headless", "true");
+	public  void setUpHeadlessMode(){
+		           System.setProperty("testfx.robot", "monocle");
+                     // System.setProperty("testfx.headless", "true");
 		           System.setProperty("java.awt.headless", "true");
-	// 		// System.setProperty("testfx.robot", "glass");
-	// 		// System.setProperty("testfx.headless", "true");
-	// 		// System.setProperty("prism.order", "sw");
-	// 		// System.setProperty("prism.text", "t2k");
-	// 		// System.setProperty("java.awt.headless", "true");
-		}
-
-		// FxToolkit.registerPrimaryStage();
-		// FxToolkit.setupApplication(TestfxJavafxApplication.class);
-		// FxToolkit.showStage();
+			// System.setProperty("testfx.robot", "glass");
+			// System.setProperty("testfx.headless", "true");
+			// System.setProperty("prism.order", "sw");
+			// System.setProperty("prism.text", "t2k");
+			// System.setProperty("java.awt.headless", "true");
 	}
+
+	
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
