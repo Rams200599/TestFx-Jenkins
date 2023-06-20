@@ -54,12 +54,12 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 		// primaryStage.setScene(scene);
 		// primaryStage.setTitle("HCI");
 		// primaryStage.show();
-		// application = new TestfxJavafxApplication();
-		// application.start(primaryStage);
+		application = new TestfxJavafxApplication();
+		application.start(primaryStage);
 
-		Parent mainNode = FXMLLoader.load(TestfxJavafxApplication.class.getResource("/MainPage.fxml"));
-		primaryStage.setScene(new Scene(mainNode));
-		primaryStage.show();
+		// Parent mainNode = FXMLLoader.load(TestfxJavafxApplication.class.getResource("/MainPage.fxml"));
+		// primaryStage.setScene(new Scene(mainNode));
+		// primaryStage.show();
 		// primaryStage.toFront();
 
 	}
