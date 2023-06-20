@@ -70,9 +70,19 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 		// primaryStage.setScene(scene);
 		// primaryStage.setTitle("HCI");
 		// primaryStage.show();
-		application = new TestfxJavafxApplication();
-		application.start(primaryStage);
+		// application = new TestfxJavafxApplication();
+		// application.start(primaryStage);
+
+		scene = new Scene(loadFXML("secondary"), 600,400);
+                stage.setScene(scene);
+                stage.setTitle("HCI");
+                stage.show();
 	}
+
+	private static Parent loadFXML(String fxml) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
+        return fxmlLoader.load();
+    }
 	
 
 	
