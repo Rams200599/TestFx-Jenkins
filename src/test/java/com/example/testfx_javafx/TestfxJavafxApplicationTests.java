@@ -30,8 +30,6 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 	@BeforeClass
 	public  void setUpHeadlessMode(){
-		FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
-        fxmlLoader.setController(secondaryController);
 		           System.setProperty("testfx.robot", "monocle");
                            // System.setProperty("testfx.headless", "true");
 		           System.setProperty("java.awt.headless", "true");
@@ -40,30 +38,11 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 			// System.setProperty("prism.order", "sw");
 			// System.setProperty("prism.text", "t2k");
 			// System.setProperty("java.awt.headless", "true");
-
-		// FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
-  //       fxmlLoader.setController(secondaryController);
 	}
 	// private static Parent loadFXML(String fxml) throws IOException {
 	// 	FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
 	// 	return fxmlLoader.load();
 	// }
-// 	@Override
-// public void init() throws Exception {
-			
-// 		FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
-//         fxmlLoader.setController(secondaryController);
-	
-// }
-
-	//  @Override
- //    public void init() throws Exception {
- //        super.init();
-	    
- //        System.setProperty("testfx.robot", "monocle");
- //        System.setProperty("testfx.headless", "true");
-	// // System.setProperty("java.awt.headless", "true");
- //    }
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
