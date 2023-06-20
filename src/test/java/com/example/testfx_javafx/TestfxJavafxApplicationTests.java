@@ -78,8 +78,8 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 // 	FxRobot robot = new FxRobot();
 
 // 	//Test case for Dialog 
-	clickOn("#dialogBoxBtn");
-	sleep(500);
+	// clickOn("#dialogBoxBtn");
+	// sleep(500);
 
 	// clickOn("Monday").sleep(500);
 	// clickOn("Wednesday");
@@ -146,19 +146,19 @@ public void testButtonB(){
 	// assertEquals("Old Password", label1.getText());
 	// sleep(500);
 
-	clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
-	sleep(500);
+	// clickOn("#pass1").write("P@ss1234").type(KeyCode.ENTER);
+	// sleep(500);
 
-	clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
-	sleep(500);
+	// clickOn("#pass2").write("R@ms1234").type(KeyCode.ENTER);
+	// sleep(500);
 
-	clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
-	sleep(500);
+	// clickOn("#pass3").write("R@ms1234").type(KeyCode.ENTER);
+	// sleep(500);
 
-	clickOn("#saveButton");
-	sleep(500);
+	// clickOn("#saveButton");
+	// sleep(500);
 
-	clickOn("OK");
+	// clickOn("OK");
 }
 
 @Test
@@ -171,10 +171,10 @@ public void menuBtn(){
 	clickOn("#helpMenu").sleep(200);
 }
 // //Test case for Button C
-// @Test
-// public void testButtonC(){
-// 	clickOn("#buttonC");
-// 	sleep(500);
+@Test
+public void testButtonC(){
+	clickOn("#buttonC");
+	sleep(500);
 
 // 	FxRobot robot = new FxRobot();
 
@@ -195,14 +195,14 @@ public void menuBtn(){
 // 	clickOn("#saveButton");
 // 	sleep(500);
 // 	// assertEquals("Female selected", female.getText()+" selected");
-// }
+}
 
 // //Test case for Button D
-// @Test
-// public void testButtonD(){
-// 	// FxRobot robot = new FxRobot();
-// 	clickOn("#buttonD");
-// 	sleep(500);
+@Test
+public void testButtonD(){
+	// FxRobot robot = new FxRobot();
+	clickOn("#buttonD");
+	sleep(500);
 
 // 	//Test case for ComboBox
 // 	// clickOn("#comboBOx");
@@ -239,13 +239,13 @@ public void menuBtn(){
 
 // 	clickOn("#saveButton");
 // 	sleep(500);
-// }
+}
 
 // //Test case for Button E
-// @Test
-// public void testButtonE(){
-// 	clickOn("#buttonE");
-// 	sleep(500);
+@Test
+public void testButtonE(){
+	clickOn("#buttonE");
+	sleep(500);
 
 // 	FxRobot robot = new FxRobot();
 
@@ -255,11 +255,11 @@ public void menuBtn(){
 // 	// clickOn("80");
 // 	slider.setValue(50.0);
 // 	sleep(500);
-// }
+}
 
-// @Test
-// public void testButtonF(){
-// 	clickOn("#buttonF");
+@Test
+public void testButtonF(){
+	clickOn("#buttonF");
 // 	// clickOn("#dp");
 
 // 	clickOn(1215, 340);
@@ -274,5 +274,5 @@ public void menuBtn(){
 // 	sleep(500);
 
 // 	clickOn("#saveButton").sleep(500);
-// }
+}
 }
