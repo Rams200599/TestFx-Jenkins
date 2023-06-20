@@ -94,12 +94,12 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	// clickOn("OK");
 
 	// //test case for TextField
-	// TextField textField = robot.lookup("#textFieldA").query();
-	// // assertEquals("Page A", textField.getText());
-	// sleep(500);
+	TextField textField = robot.lookup("#textFieldA").query();
+	// assertEquals("Page A", textField.getText());
+	sleep(500);
 
-	// clickOn("#tableViewButton");
-	// sleep(500);
+	clickOn("#tableViewButton");
+	sleep(500);
 
 	// //test case for TableView
 	TableView tableView = robot.lookup("#tableView").query();
