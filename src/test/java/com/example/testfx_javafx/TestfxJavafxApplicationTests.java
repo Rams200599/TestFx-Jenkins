@@ -253,10 +253,10 @@ public void testButtonF(){
 	clickOn("#buttonF");
 	// clickOn("#dp");
 
-	clickOn(1215, 340);
-	sleep(500);
-	clickOn("20");
-	sleep(500);
+	// clickOn(1215, 340);
+	// sleep(500);
+	// clickOn("20");
+	// sleep(500);
 
 	clickOn("#imageView");
 	sleep(200);
