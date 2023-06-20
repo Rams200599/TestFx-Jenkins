@@ -5,6 +5,10 @@ import org.junit.BeforeClass;
 // import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.ApplicationTest;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import java.io.IOException;
+
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
