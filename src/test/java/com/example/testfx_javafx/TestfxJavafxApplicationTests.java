@@ -102,15 +102,15 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	// sleep(500);
 
 	// //test case for TableView
-	// TableView tableView = robot.lookup("#tableView").query();
-	// // assertNotNull(tableView);
-	// // assertEquals(2, tableView.getItems().size());
+	TableView tableView = robot.lookup("#tableView").query();
+	// assertNotNull(tableView);
+	// assertEquals(2, tableView.getItems().size());
 
-	// // assertTrue(TableViewMatchers.containsRow("Ram", "Pawar", "Ahmednagar").matches(tableView));
-	// // assertTrue(TableViewMatchers.containsRow("Ankit", "More", "Jalgaon").matches(tableView));
+	// assertTrue(TableViewMatchers.containsRow("Ram", "Pawar", "Ahmednagar").matches(tableView));
+	// assertTrue(TableViewMatchers.containsRow("Ankit", "More", "Jalgaon").matches(tableView));
 
-	// clickOn("#treeViewButton");
-	// sleep(500);
+	clickOn("#treeViewButton");
+	sleep(500);
 
 	// //Test case for TreeTableView
 	// TreeTableView treeTableView = robot.lookup("#treeTableView").query();
