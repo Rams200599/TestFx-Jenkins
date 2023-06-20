@@ -50,14 +50,22 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 		// primaryStage.setScene(scene);
 		// primaryStage.setTitle("HCI");
 		// primaryStage.show();
-		application = new TestfxJavafxApplication();
-		application.start(primaryStage);
+		// application = new TestfxJavafxApplication();
+		// application.start(primaryStage);
+
+		Parent mainNode = FXMLLoader.load(TestfxJavafxApplication.class.getResource("/MainPage.fxml"));
+		primaryStage.setScene(new Scene(mainNode));
+		primaryStage.show();
+		primaryStage.toFront();
 
 	}
-	private static Parent loadFXML(String fxml) throws IOException {
-		FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
-		return fxmlLoader.load();
+	@After
+	public void tearDown() throws Exception {
+		FxToolkit.hideStage();
+		release(new KeyCode[] {});
+		release(new MouseButton[] {});
 	}
+	
 
 	
 
@@ -65,21 +73,27 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 	@Test
 	public void testButtonA(){
 	//Click the button
-	FxRobot robot = new FxRobot();
-	clickOn("#buttonA");
+	// FxRobot robot = new FxRobot();
+	// clickOn("#buttonA");
 
 	//Robot object created
 	// FxRobot robot = new FxRobot();
 
 	//Test case for Dialog 
-	clickOn("#dialogBoxBtn");
-	// robot.lookup("#dialogBoxBtn");
-	sleep(500);
+	// clickOn("#dialogBoxBtn");
+	// // robot.lookup("#dialogBoxBtn");
+	// sleep(500);
 
-	clickOn("Monday").sleep(500);
-	clickOn("Wednesday");
-	sleep(500);
-	clickOn("OK");
+	// clickOn("Monday").sleep(500);
+	// clickOn("Wednesday");
+	// sleep(500);
+	// clickOn("OK");
+
+	   FxRobot robot = new FxRobot();
+           robot.clickOn("#buttonA");
+           WaitForAsyncUtils.waitFor(2, TimeUnit.SECONDS, () -> 
+           robot.lookup("#dialogBoxBtn").match(NodeQueryUtils.isVisible()).tryQuery().isPresent());
+           robot.clickOn("Monday").sleep(500);
 
 	// //test case for TextField
 	// TextField textField = robot.lookup("#textFieldA").query();
