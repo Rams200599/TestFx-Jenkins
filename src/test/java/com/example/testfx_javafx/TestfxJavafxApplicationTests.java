@@ -39,11 +39,7 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 			// System.setProperty("prism.text", "t2k");
 			// System.setProperty("java.awt.headless", "true");
 	}
-	// private static Parent loadFXML(String fxml) throws IOException {
-	// 	FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
-	// 	return fxmlLoader.load();
-	// }
-
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// scene = new Scene(loadFXML("secondary"));
@@ -63,8 +59,6 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
         FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
         return fxmlLoader.load();
     }
-	
-
 	
 
 	/***************************TestFx-Test-Cases******************************/
