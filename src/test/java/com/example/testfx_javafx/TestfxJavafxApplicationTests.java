@@ -28,10 +28,6 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 
 	@BeforeClass
 	public static void setUpHeadlessMode(){
-		private static Parent loadFXML(String fxml) throws IOException {
-		FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
-		return fxmlLoader.load();
-	}
 		           System.setProperty("testfx.robot", "monocle");
                            System.setProperty("testfx.headless", "true");
 		           // System.setProperty("java.awt.headless', 'false");
@@ -40,6 +36,11 @@ class TestfxJavafxApplicationTests extends ApplicationTest{
 			// System.setProperty("prism.order", "sw");
 			// System.setProperty("prism.text", "t2k");
 			// System.setProperty("java.awt.headless", "true");
+
+		private static Parent loadFXML(String fxml) throws IOException {
+		FXMLLoader fxmlLoader = new FXMLLoader(TestfxJavafxApplication.class.getResource("/secondary.fxml"));
+		return fxmlLoader.load();
+	}
 	}
 
 	//  @Override
