@@ -233,10 +233,10 @@ public void testButtonD(){
 }
 
 //Test case for Button E
-// @Test
-// public void testButtonE(){
-// 	clickOn("#buttonE");
-// 	sleep(500);
+@Test
+public void testButtonE(){
+	clickOn("#buttonE");
+	sleep(500);
 
 // 	FxRobot robot = new FxRobot();
 
@@ -245,7 +245,7 @@ public void testButtonD(){
 // 	robot.clickOn("#slider");
 // 	slider.setValue(50.0);
 // 	sleep(500);
-// }
+}
 
 @Test
 public void testButtonF(){
