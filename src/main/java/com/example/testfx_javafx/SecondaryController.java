@@ -460,7 +460,7 @@ public class SecondaryController {
         label3.setLayoutY(230);
 
         Slider slider = new Slider();
-        slider.setId("slider");
+        slider.setId("Slider");
         slider.setLayoutX(180);
         slider.setLayoutY(90);
         slider.setMin(0);
