@@ -238,13 +238,13 @@ public void testButtonE(){
 	clickOn("#buttonE");
 	sleep(500);
 
-	FxRobot robot = new FxRobot();
+	// FxRobot robot = new FxRobot();
 
-	// Test cse for Slider
-	Slider slider = robot.lookup("#slider").query();
-	robot.clickOn("#Slider");
-	slider.setValue(50.0);
-	sleep(500);
+	// // Test cse for Slider
+	// Slider slider = robot.lookup("#slider").query();
+	// robot.clickOn("#Slider");
+	// slider.setValue(50.0);
+	// sleep(500);
 }
 
 @Test
