@@ -11,9 +11,9 @@ pipeline {
 
     stage(' Test') {
       steps {
-        // sh 'export DISPLAY=:99.0 && mvn test -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw'
+        sh 'export DISPLAY=:99.0 && -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw mvn test '
          // sh 'mvn test -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw'
-        sh 'export DISPLAY=:99.0 && mvn test'
+        // sh 'export DISPLAY=:99.0 && mvn test'
           // sh 'mvn test'
         echo 'Test Done'
       }
