@@ -213,7 +213,7 @@ public void testButtonc1(){
 	clickOn("#buttonE");
 	sleep(500);
 
-	FxRobot robot = new FxRobot();
+	// FxRobot robot = new FxRobot();
 
 	//Test cse for Slider
 	Slider slider = robot.lookup("#slider").query();
