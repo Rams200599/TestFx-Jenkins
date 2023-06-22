@@ -202,6 +202,13 @@ public void testButtonc1(){
 
 	clickOn("#saveButton");
 	sleep(500);
+
+	RadioButton female = robot.lookup("#female").query();
+	clickOn("#female");
+	sleep(500);
+
+	clickOn("#saveButton");
+	sleep(500);
 }
 
 
