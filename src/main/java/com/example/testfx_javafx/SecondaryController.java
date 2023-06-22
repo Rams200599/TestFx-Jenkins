@@ -319,7 +319,7 @@ public class SecondaryController {
         label.setLayoutX(115);
         label.setLayoutY(50);
 
-        RadioButton male = new RadioButton("Male");
+        RadioButton male = new RadioButton("male");
         male.setId("male");
         male.setLayoutX(100);
         male.setLayoutY(140);
