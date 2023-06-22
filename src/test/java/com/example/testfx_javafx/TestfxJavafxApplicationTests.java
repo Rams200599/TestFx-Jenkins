@@ -259,20 +259,18 @@ public void testButtonc1(){
 // }
 
 @Test
-public void testButtond1(){
+public void testButtone(){
+	clickOn("#buttonE");
+	sleep(500);
+
 	FxRobot robot = new FxRobot();
-	clickOn("#buttonD");
+
+	//Test cse for Slider
+	Slider slider = robot.lookup("#slider").query();
+	clickOn("#slider");
+	// clickOn("80");
+	slider.setValue(50.0);
 	sleep(500);
-
-	//Test case for ComboBox
-	// clickOn("#comboBOx");
-	clickOn(1015, 395);
-	sleep(500);
-
-	ComboBox b2 = robot.lookup("#comboBOx").query();
-
-	clickOn("Aspirants");
-	interact(() -> b2.getSelectionModel().select("Aspirants"));
 }
 
 //Test case for Button E
