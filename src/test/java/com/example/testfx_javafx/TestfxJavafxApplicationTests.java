@@ -211,21 +211,6 @@ public void testButtonc1(){
 	sleep(500);
 
 
-	//Test case for button D
-	// clickOn("#buttonD");
-	// sleep(500);
-
-	// //Test case for ComboBox
-	// // clickOn("#comboBOx");
-	// clickOn(1015, 395);
-	// sleep(500);
-
-	// ComboBox b2 = robot.lookup("#comboBOx").query();
-
-	// clickOn("Aspirants");
-	// interact(() -> b2.getSelectionModel().select("Aspirants"));
-
-
 	// Test case for Button E
 	clickOn("#buttonE");
 	sleep(500);
@@ -239,6 +224,24 @@ public void testButtonc1(){
 	// clickOn("80");
 	slider.setValue(50.0);
 	sleep(500);
+
+
+	//Test case for Button F
+	clickOn("#buttonF");
+	// clickOn("#dp");
+
+	clickOn(1215, 340);
+	sleep(500);
+	clickOn("20");
+	sleep(500);
+
+	clickOn("#imageView");
+	sleep(200);
+
+	clickOn(1216, 447).sleep(700).clickOn().sleep(700).clickOn();
+	sleep(500);
+
+	clickOn("#saveButton").sleep(500);
 }
 
 
@@ -286,22 +289,6 @@ public void testButtonc1(){
 
 	// clickOn("#saveButton");
 	// sleep(500);
-// }
-
-// @Test
-// public void testButtone(){
-// 	clickOn("#buttonE");
-// 	sleep(500);
-
-// 	FxRobot robot = new FxRobot();
-
-// 	//Test cse for Slider
-// 	Slider slider = robot.lookup("#slider").query();
-// 	slider.setId("slider");
-// 	clickOn("#slider");
-// 	// clickOn("80");
-// 	slider.setValue(50.0);
-// 	sleep(500);
 // }
 
 //Test case for Button E
