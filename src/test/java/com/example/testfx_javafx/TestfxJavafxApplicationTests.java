@@ -230,16 +230,16 @@ public void testButtonc1(){
 	clickOn("#buttonF");
 	// clickOn("#dp");
 
-	clickOn(1215, 340);
-	sleep(500);
-	clickOn("20");
-	sleep(500);
+	// clickOn(1215, 340);
+	// sleep(500);
+	// clickOn("20");
+	// sleep(500);
 
-	// clickOn("#imageView");
-	// sleep(200);
+	// // clickOn("#imageView");
+	// // sleep(200);
 
-	clickOn(1216, 447).sleep(700).clickOn().sleep(700).clickOn();
-	sleep(500);
+	// clickOn(1216, 447).sleep(700).clickOn().sleep(700).clickOn();
+	// sleep(500);
 
 	clickOn("#saveButton").sleep(500);
 }
