@@ -267,7 +267,8 @@ public void testButtone(){
 
 	//Test cse for Slider
 	Slider slider = robot.lookup("#slider").query();
-	clickOn("#Slider");
+	slider.setId("slider");
+	clickOn("#slider");
 	// clickOn("80");
 	slider.setValue(50.0);
 	sleep(500);
