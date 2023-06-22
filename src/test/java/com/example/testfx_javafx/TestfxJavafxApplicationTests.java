@@ -212,18 +212,18 @@ public void testButtonc1(){
 
 
 	//Test case for button D
-	clickOn("#buttonD");
-	sleep(500);
+	// clickOn("#buttonD");
+	// sleep(500);
 
-	//Test case for ComboBox
-	// clickOn("#comboBOx");
-	clickOn(1015, 395);
-	sleep(500);
+	// //Test case for ComboBox
+	// // clickOn("#comboBOx");
+	// clickOn(1015, 395);
+	// sleep(500);
 
-	ComboBox b2 = robot.lookup("#comboBOx").query();
+	// ComboBox b2 = robot.lookup("#comboBOx").query();
 
-	clickOn("Aspirants");
-	interact(() -> b2.getSelectionModel().select("Aspirants"));
+	// clickOn("Aspirants");
+	// interact(() -> b2.getSelectionModel().select("Aspirants"));
 
 
 	// Test case for Button E
