@@ -259,7 +259,7 @@ public void testButtonc1(){
 // }
 
 @Test
-public void testButtonD1(){
+public void testButtond1(){
 	FxRobot robot = new FxRobot();
 	clickOn("#buttonD");
 	sleep(500);
