@@ -188,6 +188,23 @@ public void testButtonC(){
 // 	assertEquals("Female selected", female.getText()+" selected");
 }
 
+@Test
+public void testButtonc1(){
+	clickOn("#buttonC");
+	sleep(500);
+
+	FxRobot robot = new FxRobot();
+
+	// Test case for RadioButton
+	RadioButton male = robot.lookup("#male").query();
+	clickOn("#male");
+	sleep(500);
+
+	clickOn("#saveButton");
+	sleep(500);
+}
+
+
 //Test case for Button D
 @Test
 public void testButtonD(){
