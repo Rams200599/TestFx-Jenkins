@@ -170,9 +170,9 @@ public void testButtonC(){
 	FxRobot robot = new FxRobot();
 
 // 	Test case for RadioButton
-	// RadioButton male = robot.lookup("#male").query();
-	// clickOn("#male");
-	// sleep(500);
+	RadioButton male = robot.lookup("#male").query();
+	clickOn("#male");
+	sleep(500);
 
 	// clickOn("#saveButton");
 	// sleep(500);
