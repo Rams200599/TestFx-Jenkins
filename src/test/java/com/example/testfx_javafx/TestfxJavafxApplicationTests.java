@@ -235,8 +235,8 @@ public void testButtonc1(){
 	clickOn("20");
 	sleep(500);
 
-	clickOn("#imageView");
-	sleep(200);
+	// clickOn("#imageView");
+	// sleep(200);
 
 	clickOn(1216, 447).sleep(700).clickOn().sleep(700).clickOn();
 	sleep(500);
